@@ -1,15 +1,4 @@
 {
-  "version": 3,
-  "name": "cooper-portfolio",
-  "builds": [
-    {
-      "src": "**/*",
-      "use": "@vercel/static"
-    }
-  ],
-  "cleanUrls": true,
-  "routes": [
-    { "src": "^/$", "dest": "/index.html" },
-    { "src": "^/(.*)$", "dest": "/$1" }
-  ]
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true
 }
