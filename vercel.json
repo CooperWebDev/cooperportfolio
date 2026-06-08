@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "name": "cooper-portfolio",
+  "builds": [
+    {
+      "src": "**/*",
+      "use": "@vercel/static"
+    }
+  ]
+}

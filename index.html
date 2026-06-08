@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cooper, Front-end Developer and Discord Bot Developerbased in the Netherlands. 2+ years experience, 20+ projects delivered with HTML, CSS, JavaScript, and Node.js.">
+    <title>Cooper, Software Developer</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/bento.css">
+    <link rel="stylesheet" href="css/charts.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/reviews-carousel.css">
+    <link rel="stylesheet" href="css/achievements.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+</head>
+<body data-page="index.html" class="page-enter">
+
+    <main class="site-main">
+
+    <section class="hero hero-home">
+        <div class="hero-mesh" aria-hidden="true">
+            <div class="hero-mesh-blob hero-mesh-blob-1"></div>
+            <div class="hero-mesh-blob hero-mesh-blob-2"></div>
+            <div class="hero-mesh-blob hero-mesh-blob-3"></div>
+        </div>
+        <div class="hero-home-inner">
+            <div class="hero-home-copy hero-stagger">
+                <p class="hero-eyebrow">Front-end Developer & Discord Bot Developer<span class="hero-cursor" aria-hidden="true"></span></p>
+                <h1>Websites and bots, built to <em>perform</em>.</h1>
+                <p class="hero-lede">I build responsive websites and custom Discord bots with HTML, CSS, and JavaScript. 2+ years of experience, 20+ projects delivered, based in the Netherlands.</p>
+                <div class="hero-home-actions">
+                    <a href="projects.html" class="btn-main">View My Work</a>
+                    <a href="contact.html" class="btn-ghost">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-home-photo hero-stagger">
+                <figure class="hero-portrait">
+                    <div class="hero-portrait-glow" aria-hidden="true"></div>
+                    <img src="Images/Profile.png" alt="Cooper, Software Developer" width="400" height="400">
+                </figure>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">About Me</span>
+                <h2>I work with love and dedication.</h2>
+            </div>
+            <div class="bento-grid">
+                <div class="bento-card bento-bio reveal">
+                    <p>I'm a front-end developer specializing in HTML, CSS, and JavaScript, and I also build custom Discord bots. With 2+ years of experience and 20+ delivered projects, my focus is clean code, reliable delivery, and polished results.</p>
+                    <p class="mt-lg">Based in the Netherlands, I work with clients internationally and combine development with competitive Rocket League. I play Rocket League in my free time and it's also a way for me to relax and stay motivated.</p>
+                    <a href="contact.html" class="btn-main mt-lg">Contact Me</a>
+                </div>
+                <div class="bento-card bento-photo reveal reveal-delay-1">
+                    <img src="Images/Profile.png" alt="Cooper Profile" loading="lazy" width="400" height="400">
+                </div>
+                <div class="bento-stats-row">
+                    <div class="bento-card bento-stat reveal reveal-delay-1">
+                        <div class="stat-number" data-count="20" data-suffix="+">0+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="bento-card bento-stat reveal reveal-delay-2">
+                        <div class="stat-number" data-count="2" data-suffix="+">0+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="bento-card bento-stat reveal reveal-delay-3">
+                        <div class="stat-number" data-count="3">0</div>
+                        <div class="stat-label">Current Reviews</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="charts-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">At a Glance</span>
+                <h2>Skills &amp; achievements in data</h2>
+            </div>
+            <div class="charts-grid reveal reveal-delay-1">
+                <div class="chart-card">
+                    <div class="chart-card-header">
+                        <div>
+                            <h3>Core Skills</h3>
+                        </div>
+                        <a href="skills.html" class="chart-card-link">Full profile →</a>
+                    </div>
+                    <div class="chart-wrap chart-wrap-sm">
+                        <canvas id="chart-home-radar"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <div class="chart-card-header">
+                        <div>
+                            <h3>Best RL Ranks</h3>
+                        </div>
+                        <a href="achievements.html" class="chart-card-link">All ranks →</a>
+                    </div>
+                    <div class="chart-wrap chart-wrap-sm">
+                        <canvas id="chart-home-ranks"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="section-divider">
+
+    <section class="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Portfolio</span>
+                <h2>Featured Projects</h2>
+            </div>
+            <div class="project-grid">
+                <div class="project-card tilt-card reveal">
+                    <div class="project-image">
+                        <img src="Images/Project1.png" alt="Artistico" loading="lazy">
+                        <div class="project-image-overlay"><span class="btn-ghost">View Project</span></div>
+                    </div>
+                    <div class="project-content">
+                    <div class="project-meta">
+                        <span>Live</span>
+                        <span>2026</span>
+                        <span>Full-stack</span>
+                    </div>
+                        <h3>Artistico</h3>
+                        <p>A wallpaper gallery with search, categories, and personalization. Built with love and care, just a fun project.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Node.js</span>
+                        </div>
+                        <a href="https://artistico.onrender.com/" target="_blank" rel="noopener" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Visit Live Demo
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card tilt-card reveal reveal-delay-1">
+                    <div class="project-image">
+                        <img src="Images/Project2.png" alt="TraxzyTiers" loading="lazy">
+                        <div class="project-image-overlay"><span class="btn-ghost">View Project</span></div>
+                    </div>
+                    <div class="project-content">
+                    <div class="project-meta">
+                        <span>Live</span>
+                        <span>2026</span>
+                        <span>Full-stack</span>
+                    </div>
+                        <h3>TraxzyTiers</h3>
+                        <p>Minecraft server tier ranking system with real-time player statistics and leaderboard management.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Node.js</span>
+                        </div>
+                        <a href="https://traxzytiers.vercel.app/" target="_blank" rel="noopener" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Visit Live Demo
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card tilt-card reveal reveal-delay-2">
+                    <div class="project-image">
+                        <img src="Images/Project3.png" alt="Cooper Portfolio" loading="lazy">
+                        <div class="project-image-overlay"><span class="btn-ghost">View Project</span></div>
+                    </div>
+                    <div class="project-content">
+                    <div class="project-meta">
+                        <span>Live</span>
+                        <span>2026</span>
+                        <span>Front-end</span>
+                    </div>
+                        <h3>Cooper Portfolio</h3>
+                        <p>This portfolio site is made to showcase my work and skills in web development, discord bot development and Rocket League achievements.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Node.js</span>
+                        </div>
+                        <a href="index.html" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> You are here
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center reveal mt-xl">
+                <a href="projects.html" class="btn-main">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="stack-section" id="stack">
+        <div class="stack-marquee">
+            <div class="stack-marquee-track">
+                <div class="stack-marquee-group">
+                    <span class="stack-pill">HTML</span>
+                    <span class="stack-pill">CSS</span>
+                    <span class="stack-pill">JavaScript</span>
+                    <span class="stack-pill">Node.js</span>
+                    <span class="stack-pill">Discord.js</span>
+                    <span class="stack-pill">Next.js</span>
+                    <span class="stack-pill">Web Development</span>
+                    <span class="stack-pill">Discord Bots</span>
+                </div>
+                <div class="stack-marquee-group" aria-hidden="true">
+                    <span class="stack-pill">HTML</span>
+                    <span class="stack-pill">CSS</span>
+                    <span class="stack-pill">JavaScript</span>
+                    <span class="stack-pill">Node.js</span>
+                    <span class="stack-pill">Discord.js</span>
+                    <span class="stack-pill">Next.js</span>
+                    <span class="stack-pill">Web Development</span>
+                    <span class="stack-pill">Discord Bots</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews-carousel-section">
+        <div class="container">
+            <div class="reviews-carousel-header reveal">
+                <span class="reviews-label">Testimonials</span>
+                <h2>Trusted by <span class="reviews-highlight">clients</span></h2>
+                <p>Feedback from founders and communities I have worked with. Verified reviews from delivered projects.</p>
+            </div>
+            <div class="reviews-carousel reveal" data-reviews-carousel>
+                <button class="reviews-nav reviews-nav-prev" type="button" aria-label="Previous review"><i class="fas fa-chevron-left"></i></button>
+                <div class="reviews-carousel-viewport">
+                    <div class="reviews-carousel-ring"></div>
+                </div>
+                <button class="reviews-nav reviews-nav-next" type="button" aria-label="Next review"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <p class="reviews-carousel-hint">Hover to pause, Click to focus, Drag to browse</p>
+        </div>
+    </section>
+
+    <section class="ach-home-teaser">
+        <div class="ach-home-teaser-inner reveal">
+            <div class="ach-home-teaser-text">
+                <h2>Competitive Gaming</h2>
+                <p>Rocket League Netherlands peak rankings across multiple playlists, including 1v1, 2v2, 3v3, 4v4, Hoops, Rumble, Dropshot, Snow Day, Tournaments, and Casual.</p>
+                <div class="ach-home-badges">
+                    <span class="ach-home-badge">#104 Snow Day</span>
+                    <span class="ach-home-badge">#325 Casual</span>
+                    <span class="ach-home-badge">#376 Hoops</span>
+                </div>
+            </div>
+            <a href="achievements.html" class="btn-ghost">View Achievements</a>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <div class="cta-banner-inner reveal">
+            <h2>Ready to start your project?</h2>
+            <p>Tell me about your requirements and I will respond within 24 hours with next steps.</p>
+            <div class="hero-buttons">
+                <a href="contact.html" class="btn-main">Get in Touch</a>
+                <a href="projects.html" class="btn-ghost">Browse Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <script src="js/layout.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/reviews-carousel.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

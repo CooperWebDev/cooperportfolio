@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" fill="none">
+  <defs>
+    <linearGradient id="g2" x1="600" y1="0" x2="0" y2="340">
+      <stop offset="0%" stop-color="#17241F"/>
+      <stop offset="50%" stop-color="#12966F"/>
+      <stop offset="100%" stop-color="#050807"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" fill="url(#g2)"/>
+  <rect x="40" y="40" width="80" height="80" rx="12" fill="#18A87A" opacity="0.2"/>
+  <text x="40" y="180" fill="#FFFFFF" font-family="Inter, system-ui, sans-serif" font-size="48" font-weight="800">TraxzyTiers</text>
+  <text x="40" y="220" fill="#C3CEC8" font-family="Inter, system-ui, sans-serif" font-size="16">Next.js · MongoDB · Socket.io</text>
+</svg>

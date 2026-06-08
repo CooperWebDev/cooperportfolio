@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cooper, Front-end Developer and Discord Bot Developerbased in the Netherlands. 2+ years experience, 20+ projects delivered with HTML, CSS, JavaScript, and Node.js.">
+    <title>Services - Cooper Portfolio</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/inner-pages.css">
+    <link rel="stylesheet" href="css/utilities.css">
+</head>
+<body data-page="services.html" class="page-enter">
+
+    <main class="site-main">
+
+    <section class="page-hero">
+        <h1>My <span class="hero-highlight">Services</span></h1>
+        <p>From concept to launch. I help you build, design, and create amazing digital experiences.</p>
+    </section>
+
+    <section class="section-dark">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-card reveal" id="web">
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Responsive websites built with HTML, CSS, and JavaScript. Clean code, fast load times, and mobile friendly layouts.</p>
+                    <a href="contact.html" class="btn-ghost">Get In Touch</a>
+                </div>
+                <div class="service-card reveal reveal-delay-2" id="bots">
+                    <div class="service-icon"><i class="fas fa-robot"></i></div>
+                    <h3>Discord Bots</h3>
+                    <p>Custom Discord bots built with Discord.js and Node.js. Moderation, ticketing, custom systems and community integrations.</p>
+                    <a href="contact.html" class="btn-ghost">Get In Touch</a>
+                </div>
+                <div class="service-card reveal reveal-delay-1" id="design">
+                    <div class="service-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Rocket League Boosting</h3>
+                    <p>Get your Rocket League rank up with my expert boosting services all the way up to champion.</p>
+                    <a href="contact.html" class="btn-ghost">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="container">
+            <div class="pricing-header reveal">
+                <h2>Pricing Plans</h2>
+                <p>We can always negotiate a deal that works the best for both sides, just contact me and we will figure it out.</p>
+            </div>
+            <div class="pricing-tabs reveal">
+                <div class="toggle-buttons pricing-tab-list">
+                    <button type="button" class="pricing-tab active" data-target="pricing-web">WEB</button>
+                    <button type="button" class="pricing-tab" data-target="pricing-bots">BOT</button>
+                    <button type="button" class="pricing-tab" data-target="pricing-boosting">BOOSTING</button>
+                </div>
+            </div>
+
+            <!-- Boosting pricing -->
+            <div id="pricing-boosting" class="pricing-grid reveal reveal-delay-1" style="display:none;">
+                <div class="pricing-card">
+                    <div class="plan-name">Starter</div>
+                    <div class="price" data-plan="starter">€10</div>
+                    <div class="price-period">one-time</div>
+                    <div class="features">
+                        <div class="feature">Small boost session</div>
+                        <div class="feature">from gold to platinum rank</div>
+                        <div class="feature">You need to give me full access to your account</div>
+                    </div>
+                    <a href="contact.html" class="btn-ghost">Get Started</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="plan-name">Professional</div>
+                    <div class="price" data-plan="professional">€15</div>
+                    <div class="price-period">one-time</div>
+                    <div class="features">
+                        <div class="feature">Medium boost session</div>
+                        <div class="feature">From platinum to diamond rank</div>
+                        <div class="feature">You need to give me full access to your account</div>
+                    </div>
+                    <a href="contact.html" class="btn-ghost">Get Started</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="recommended-badge">RECOMMENDED</div>
+                    <div class="plan-name">Business</div>
+                    <div class="price" data-plan="business">€20</div>
+                    <div class="price-period">one-time</div>
+                    <div class="features">
+                        <div class="feature">Large boost session</div>
+                        <div class="feature">From diamond to Champion rank</div>
+                        <div class="feature">You need to give me full access to your account</div>
+                    </div>
+                    <a href="contact.html" class="btn-main">Get Started</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="plan-name">Enterprise</div>
+                    <div class="price" data-plan="enterprise">Custom</div>
+                    <div class="price-period">one-time</div>
+                    <div class="features">
+                        <div class="feature">Large boost session</div>
+                        <div class="feature">We can discuss the rank boosting</div>
+                        <div class="feature">You need to give me full access to your account</div>
+                    </div>
+                    <a href="contact.html" class="btn-ghost">Contact Sales</a>
+                </div>
+            </div>
+
+            <!-- Web development pricing -->
+            <div id="pricing-web" class="pricing-grid reveal reveal-delay-1 active">
+                <div class="pricing-card">
+                    <div class="plan-name">Starter</div>
+                    <div class="price" data-plan="starter">€15</div>
+                    <div class="price-period">one-time</div>
+                    <div class="features">
+                        <div class="feature">One-page website</div>
+                        <div class="feature">Simple integrations</div>
+                        <div class="feature">Simple Styling</div>
+                    </div>
+                    <a href="contact.html" class="btn-ghost">Get Started</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="recommended-badge">RECOMMENDED</div>
+                    <div class="plan-name">Professional</div>
+                    <div class="price" data-plan="professional">€25</div>
+                    <div class="price-period">one-time</div>
+                    <div class="features">
+                        <div class="feature">Multi-page website</div>
+                        <div class="feature">Basic integrations</div>
+                        <div class="feature">Basic Styling</div>
+                    </div>
+                    <a href="contact.html" class="btn-main">Get Started</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="plan-name">Business</div>
+                    <div class="price" data-plan="business">€35</div>
+                    <div class="price-period">one-time</div>
+                    <div class="features">
+                        <div class="feature">Multi-page website</div>
+                        <div class="feature">Professional integrations</div>
+                        <div class="feature">Professional Styling</div>
+                    </div>
+                    <a href="contact.html" class="btn-ghost">Get Started</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="plan-name">Enterprise</div>
+                    <div class="price" data-plan="enterprise">Custom</div>
+                    <div class="price-period">one-time</div>
+                    <div class="features">
+                        <div class="feature">Multi-page website</div>
+                        <div class="feature">Professional integrations</div>
+                        <div class="feature">Professional Styling</div>
+                    </div>
+                    <a href="contact.html" class="btn-ghost">Contact Sales</a>
+                </div>
+            </div>
+
+            <!-- Bot development pricing -->
+            <div id="pricing-bots" class="pricing-grid reveal reveal-delay-1" style="display:none;">
+                <div class="pricing-card">
+                    <div class="plan-name">Starter</div>
+                    <div class="price" data-plan="starter">€15</div>
+                    <div class="price-period">one-time</div>
+                    <div class="features">
+                        <div class="feature">Simple bot</div>
+                        <div class="feature">Limited commands</div>
+                        <div class="feature">Documentation</div>
+                    </div>
+                    <a href="contact.html" class="btn-ghost">Get Started</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="recommended-badge">RECOMMENDED</div>
+                    <div class="plan-name">Professional</div>
+                    <div class="price" data-plan="professional">€25</div>
+                    <div class="price-period">one-time</div>
+                    <div class="features">
+                        <div class="feature">Basic bot</div>
+                        <div class="feature">More command possibilities</div>
+                        <div class="feature">Documentation</div>
+                    </div>
+                    <a href="contact.html" class="btn-main">Get Started</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="plan-name">Business</div>
+                    <div class="price" data-plan="business">€35</div>
+                    <div class="price-period">one-time</div>
+                    <div class="features">
+                        <div class="feature">Professional bot</div>
+                        <div class="feature">Full command possibilities</div>
+                        <div class="feature">Documentation</div>
+                    </div>
+                    <a href="contact.html" class="btn-ghost">Get Started</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="plan-name">Enterprise</div>
+                    <div class="price" data-plan="enterprise">Custom</div>
+                    <div class="price-period">one-time</div>
+                    <div class="features">
+                        <div class="feature">Professional bot</div>
+                        <div class="feature">Full command possibilities</div>
+                        <div class="feature">Documentation</div>
+                    </div>
+                    <a href="contact.html" class="btn-ghost">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <span class="section-label">Information</span>
+            <h2 class="reveal">Common Questions</h2>
+            <div class="faq-container reveal reveal-delay-1">
+                <div class="faq-item active">
+                    <div class="faq-question"><span>Will you stay in contact with me after the project is complete?</span><span class="faq-toggle"><i class="fas fa-chevron-down"></i></span></div>
+                    <div class="faq-answer"><div class="faq-answer-content">You can always reach out if you have questions or need further assistance after the project is complete. I will not add or customize it more for free after but i will always be there for assistance.</div></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><span>Can i upgrade or downgrade my plan later?</span><span class="faq-toggle"><i class="fas fa-chevron-down"></i></span></div>
+                    <div class="faq-answer"><div class="faq-answer-content">Once the project is complete you can't change your plan. When the project hasn't been completed, we can discuss any changes you might need.</div></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question"><span>Do you offer custom plans and different pricing?</span><span class="faq-toggle"><i class="fas fa-chevron-down"></i></span></div>
+                    <div class="faq-answer"><div class="faq-answer-content">Absolutely, we can always negotiate a deal that works the best for both sides, just contact me and we will figure it out.</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <div class="cta-banner-inner reveal">
+            <h2>Not sure which plan fits?</h2>
+            <p>Tell me about your project and I'll recommend the best option.</p>
+            <a href="contact.html" class="btn-main">Contact Me</a>
+        </div>
+    </section>
+
+    </main>
+
+    <script src="js/layout.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

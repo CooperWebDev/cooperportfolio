@@ -1,0 +1,325 @@
+/* Inner page enhancements */
+.project-meta {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.project-meta span {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+    padding: 4px 10px;
+    background: var(--accent-glow-soft);
+    border-radius: var(--radius-sm);
+}
+
+.project-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.project-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto 40px;
+    background: var(--charcoal-gray);
+    padding: 6px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.project-filter-btn {
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--silver-gray);
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.25s, color 0.25s, transform 0.12s;
+}
+
+.project-filter-btn:hover {
+    background: var(--accent-highlight);
+    color: var(--text-primary);
+}
+
+.project-filter-btn.active {
+    background: var(--emerald-green);
+    color: var(--white);
+    transform: translateY(-1px);
+}
+
+.about-tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 999px;
+    padding: 4px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-tab {
+    padding: 10px 28px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-muted);
+    background: transparent;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    letter-spacing: 0.01em;
+}
+
+.about-tab.active {
+    color: #fff;
+    background: var(--accent);
+    box-shadow: 0 2px 12px rgba(24, 168, 122, 0.35);
+}
+
+.about-tab:hover:not(.active) {
+    color: var(--text-primary);
+    background: rgba(255,255,255,0.06);
+}
+
+.about-tab-panel {
+    display: none;
+}
+
+.about-tab-panel.active {
+    display: block;
+}
+
+.skill-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.skill-pill {
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    background: var(--surface-2);
+    border: var(--border-subtle);
+    border-radius: 999px;
+    transition: transform var(--transition-fast), border-color var(--transition-base), color var(--transition-fast);
+}
+
+.skill-pill:hover {
+    color: var(--accent);
+    border-color: rgba(24, 168, 122, 0.3);
+    transform: translateY(-2px);
+}
+
+.contact-info-cards {
+    display: grid;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.contact-info-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    background: var(--surface-1);
+    border: var(--border-subtle);
+    border-radius: var(--radius-md);
+    transition: border-color var(--transition-base), transform var(--transition-base);
+}
+
+.contact-info-card:hover {
+    border-color: rgba(24, 168, 122, 0.25);
+    transform: translateX(4px);
+}
+
+.contact-info-card > div {
+    color: var(--text-secondary);
+}
+
+.contact-info-card > div strong {
+    color: var(--text-primary);
+}
+
+.contact-info-card .contact-email {
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+.contact-info-card i {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-glow-soft);
+    color: var(--accent);
+    border-radius: var(--radius-md);
+    font-size: 18px;
+}
+
+.form-group-float {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.form-group-float input,
+.form-group-float textarea,
+.form-group-float select {
+    width: 100%;
+    padding: 22px 16px 10px;
+}
+
+.form-group-float textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.form-group-float label {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    font-size: 14px;
+    pointer-events: none;
+    transition: top var(--transition-fast), font-size var(--transition-fast), color var(--transition-fast);
+}
+
+.form-group-float textarea + label {
+    top: 18px;
+    transform: none;
+}
+
+.form-group-float input:focus,
+.form-group-float textarea:focus,
+.form-group-float select:focus,
+.form-group-float input.has-value,
+.form-group-float textarea.has-value,
+.form-group-float select.has-value {
+    border-color: rgba(24, 168, 122, 0.4);
+    box-shadow: 0 0 0 3px var(--accent-glow-soft);
+}
+
+.form-group-float input:focus + label,
+.form-group-float textarea:focus + label,
+.form-group-float select:focus + label,
+.form-group-float input.has-value + label,
+.form-group-float textarea.has-value + label,
+.form-group-float select.has-value + label {
+    top: 8px;
+    font-size: 11px;
+    color: var(--accent);
+    transform: none;
+}
+
+.pricing-card.featured {
+    border-color: rgba(24, 168, 122, 0.35);
+    box-shadow: 0 0 0 1px rgba(24, 168, 122, 0.15), var(--shadow-glow);
+    transform: scale(1.02);
+}
+
+.pricing-card {
+    transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.pricing-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-card);
+}
+
+.pricing-card.featured:hover {
+    transform: scale(1.02) translateY(-6px);
+}
+
+/* Service card icon container */
+.service-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    background: var(--accent-glow-soft);
+    border: var(--border-subtle);
+    border-radius: var(--radius-md);
+    font-size: 22px;
+    color: var(--accent);
+    margin-bottom: 20px;
+    transition: background var(--transition-base), box-shadow var(--transition-base);
+}
+
+.service-card:hover .service-icon {
+    background: rgba(24, 168, 122, 0.15);
+    box-shadow: 0 0 20px var(--accent-glow-soft);
+}
+
+/* Pricing card full-width CTA */
+.pricing-card .btn-main,
+.pricing-card .btn-ghost,
+.pricing-card .cta-button {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.timeline-wrapper {
+    position: relative;
+}
+
+.ach-timeline-list {
+    position: relative;
+}
+
+.btn-main:focus-visible,
+.btn-ghost:focus-visible,
+.about-tab:focus-visible,
+.project-filter-btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+/* Improve project link with animated arrow */
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color var(--transition-fast), gap var(--transition-base);
+}
+
+.project-link:hover {
+    gap: 10px;
+}
+
+/* Contact info card icon sizing fix */
+.contact-info-card i {
+    flex-shrink: 0;
+}
+
+/* Project content bottom spacing */
+.project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.project-content .project-link {
+    margin-top: auto;
+    padding-top: 16px;
+}

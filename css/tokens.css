@@ -1,0 +1,68 @@
+/* Cooper — Premium dark green design system */
+:root {
+    /* Background */
+    --bg-base: #050807;
+    --bg-elevated: #07110D;
+    --bg-deep: #0B1411;
+
+    /* Surface (matte) */
+    --surface-1: #101917;
+    --surface-2: #131E1A;
+    --surface-3: #17241F;
+
+    /* Primary accent */
+    --accent-dim: #0F8F68;
+    --accent-mid: #12966F;
+    --accent: #18A87A;
+
+    /* Effects */
+    --accent-glow: rgba(24, 168, 122, 0.18);
+    --accent-glow-soft: rgba(24, 168, 122, 0.08);
+    --accent-highlight: rgba(24, 168, 122, 0.06);
+
+    /* Text */
+    --text-primary: #FFFFFF;
+    --text-secondary: #C3CEC8;
+    --text-muted: #8E9994;
+
+    /* Borders */
+    --border-color: rgba(24, 168, 122, 0.12);
+    --border-subtle: 1px solid rgba(24, 168, 122, 0.12);
+    --border-accent: 1px solid rgba(24, 168, 122, 0.22);
+
+    /* Typography */
+    --font-body: 'Inter', system-ui, sans-serif;
+    --font-display: 'Inter', system-ui, sans-serif;
+
+    /* Motion */
+    --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+    --transition-fast: 0.2s var(--ease-premium);
+    --transition-base: 0.32s var(--ease-premium);
+
+    /* Radius */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+
+    /* Spacing */
+    --space-sm: 12px;
+    --space-md: 24px;
+    --space-lg: 48px;
+    --space-xl: 80px;
+
+    /* Shadows */
+    --shadow-card: 0 16px 40px rgba(0, 0, 0, 0.3);
+    --shadow-glow: 0 0 40px var(--accent-glow);
+
+    /* Legacy aliases (keep existing CSS working) */
+    --deep-black: var(--bg-base);
+    --charcoal-gray: var(--surface-1);
+    --emerald-green: var(--accent);
+    --forest-green: var(--accent-dim);
+    --silver-gray: var(--text-secondary);
+    --slate-gray: var(--text-muted);
+    --soft-mint: var(--text-secondary);
+    --white: var(--text-primary);
+    --neon-accent: var(--accent-mid);
+    --text-dark: var(--bg-deep);
+}

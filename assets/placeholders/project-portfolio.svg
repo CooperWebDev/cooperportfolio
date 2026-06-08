@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" fill="none">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="340" x2="600" y2="0">
+      <stop offset="0%" stop-color="#050807"/>
+      <stop offset="100%" stop-color="#18A87A" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" fill="url(#g3)"/>
+  <text x="40" y="160" fill="#18A87A" font-family="Inter, system-ui, sans-serif" font-size="72" font-weight="800">C.</text>
+  <text x="40" y="210" fill="#FFFFFF" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="700">Cooper Portfolio</text>
+  <text x="40" y="245" fill="#C3CEC8" font-family="Inter, system-ui, sans-serif" font-size="16">HTML5 · CSS3 · JavaScript</text>
+</svg>

@@ -1,0 +1,104 @@
+/* Bento grid — home about section */
+.bento-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.bento-card {
+    background: var(--surface-1);
+    border: var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    transition: transform var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.bento-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(24, 168, 122, 0.22);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3), 0 0 0 1px var(--accent-glow-soft);
+}
+
+/* bio and photo share row 1; stats span full width in row 2 */
+.bento-bio {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.bento-photo {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 0;
+    overflow: hidden;
+    min-height: 300px;
+}
+
+.bento-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform var(--transition-base);
+}
+
+.bento-photo:hover img {
+    transform: scale(1.04);
+}
+
+.bento-stat {
+    text-align: center;
+    padding: 28px 24px;
+}
+
+.bento-stat .stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.bento-stat .stat-label {
+    font-size: 13px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.bento-stats-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-column: 1 / -1;
+    grid-row: 2;
+}
+
+@media (max-width: 900px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .bento-bio,
+    .bento-photo {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .bento-photo {
+        min-height: 260px;
+    }
+
+    .bento-stats-row {
+        grid-column: auto;
+        grid-row: auto;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .bento-stats-row {
+        grid-template-columns: 1fr;
+    }
+}
