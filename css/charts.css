@@ -78,6 +78,126 @@
     margin: 0 auto;
 }
 
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .charts-section {
+        padding: 40px 12px;
+    }
+
+    .charts-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .chart-wrap-lg {
+        height: 240px;
+    }
+
+    .chart-wrap-sm {
+        height: 180px;
+    }
+
+    .skills-chart-layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .chart-card {
+        padding: 16px;
+    }
+
+    .chart-card-header h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .charts-section {
+        padding: 20px 12px;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .charts-grid {
+        display: flex;
+        grid-template-columns: unset;
+        gap: 12px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        padding: 12px;
+        margin: 0;
+        border-radius: 8px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .charts-grid::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .charts-grid::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .charts-grid::-webkit-scrollbar-thumb {
+        background: var(--emerald-green);
+        border-radius: 3px;
+    }
+
+    .chart-card {
+        padding: 8px;
+        flex-shrink: 0;
+        min-width: 240px;
+    }
+
+    .chart-wrap-lg {
+        height: 160px;
+    }
+
+    .chart-wrap-sm {
+        height: 130px;
+    }
+
+    .skills-chart-layout {
+        gap: 12px;
+        display: flex;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding: 12px;
+        margin: 0;
+        border-radius: 8px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .skills-chart-layout::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .skills-chart-layout::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .skills-chart-layout::-webkit-scrollbar-thumb {
+        background: var(--emerald-green);
+        border-radius: 3px;
+    }
+
+    .skills-chart-layout > div {
+        flex-shrink: 0;
+        min-width: 240px;
+    }
+
+    .chart-card-header {
+        margin-bottom: 8px;
+    }
+
+    .chart-card-header h3 {
+        font-size: 0.85rem;
+    }
+}
+
 @media (max-width: 768px) {
     .charts-grid,
     .skills-chart-layout {

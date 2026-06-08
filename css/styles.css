@@ -1525,8 +1525,12 @@ body[data-page="services.html"] {
     .hero,
     .project-section,
     .contact-section {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    section {
+        padding: 50px 12px;
     }
 
     .hero {
@@ -1668,7 +1672,7 @@ body[data-page="services.html"] {
     }
 
     .pricing-card {
-        padding: 20px 16px;
+        padding: 20px 12px;
     }
 
     .hero-image-wrap {
@@ -1676,16 +1680,38 @@ body[data-page="services.html"] {
     }
 
     .contact-info-card {
-        padding: 16px;
+        padding: 12px;
     }
 
     .footer-cta-bar {
-        padding: 20px 16px;
+        padding: 16px 12px;
     }
 
     .footer-email,
     .footer-location {
         font-size: 14px;
+    }
+
+    .container,
+    .page-hero,
+    .pricing,
+    .faq,
+    .section-dark,
+    .section-charcoal,
+    .pricing,
+    .hero,
+    .project-section,
+    .contact-section {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    section {
+        padding: 30px 6px;
+    }
+
+    .chart-card {
+        padding: 10px;
     }
 }
 

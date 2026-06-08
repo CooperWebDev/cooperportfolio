@@ -248,13 +248,14 @@
 
 @media (max-width: 768px) {
     .reviews-carousel-section {
-        padding: 70px 16px 70px;
+        padding: 50px 12px 50px;
     }
 
     .reviews-carousel {
         flex-direction: column;
-        gap: 20px;
-        padding-bottom: 70px;
+        gap: 16px;
+        padding-bottom: 50px;
+        max-width: 100%;
     }
 
     .reviews-nav {
@@ -262,23 +263,33 @@
     }
 
     .reviews-carousel-viewport {
-        min-height: 400px;
-        height: 400px;
+        min-height: 340px;
+        height: 340px;
         width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
     }
 
     .review-card-3d {
-        width: 260px;
-        margin-left: -130px;
-        margin-top: -145px;
+        width: 240px;
+        margin-left: -120px;
+        margin-top: -130px;
     }
 
     .review-card-inner {
-        padding: 22px 20px;
+        padding: 18px 16px;
+        font-size: 13px;
     }
 
     .reviews-carousel-header {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
+        padding: 0 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .reviews-carousel-section {
+        display: none;
     }
 }
 

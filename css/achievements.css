@@ -503,28 +503,304 @@
 @media (max-width: 768px) {
     .ach-stats {
         grid-template-columns: repeat(2, 1fr);
-        margin-top: -30px;
+        padding: 16px 8px;
+        gap: 8px;
+        margin-top: -20px;
+    }
+
+    .ach-stat-card {
+        padding: 12px 8px;
     }
 
     .ach-stat-number {
-        font-size: 26px;
+        font-size: 18px;
+    }
+
+    .ach-stat-label {
+        font-size: 9px;
+        letter-spacing: 0.5px;
+    }
+
+    .ach-overview {
+        padding: 40px 12px;
+    }
+
+    .ach-overview-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .ach-overview-card {
+        padding: 16px;
+    }
+
+    .ach-overview-card h4 {
+        font-size: 16px;
+    }
+
+    .rankings-section {
+        padding: 40px 12px;
+    }
+
+    .rankings-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .rank-card {
+        padding: 12px 10px;
+    }
+
+    .rank-card strong {
+        font-size: 22px;
+    }
+
+    .rank-card p {
+        font-size: 12px;
+    }
+
+    .ach-section {
+        padding: 40px 12px;
+    }
+
+    .ach-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .ach-card-header {
+        padding: 12px 12px 0;
+    }
+
+    .ach-card-body {
+        padding: 12px;
+    }
+
+    .ach-card-body h3 {
+        font-size: 16px;
+    }
+
+    .ach-timeline {
+        padding: 40px 12px;
+    }
+
+    .ach-timeline-list {
+        padding-left: 20px;
+    }
+
+    .ach-timeline-list::before {
+        left: 4px;
+    }
+
+    .ach-timeline-item::before {
+        left: -20px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .ach-timeline-item h4 {
+        font-size: 14px;
+    }
+
+    .ach-home-teaser {
+        padding: 40px 12px;
     }
 
     .ach-home-teaser-inner {
         flex-direction: column;
         text-align: center;
+        gap: 16px;
     }
 
     .ach-home-teaser-text h2 {
         text-align: center;
+        font-size: 22px;
+    }
+
+    .ach-home-teaser-text p {
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+    .ach-home-badges {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .ach-home-teaser-inner {
+        text-align: center;
+    }
+
+    .ach-home-teaser-text h2 {
+        text-align: center !important;
+        font-size: 22px;
     }
 
     .ach-home-teaser-text p {
         margin: 0 auto;
     }
 
-    .ach-home-badges {
-        justify-content: center;
+    .ach-stats {
+        display: flex;
+        grid-template-columns: unset;
+        gap: 8px;
+        padding: 12px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        margin: 0 12px;
+        border-radius: 8px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .ach-stats::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .ach-stats::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .ach-stats::-webkit-scrollbar-thumb {
+        background: var(--emerald-green);
+        border-radius: 2px;
+    }
+
+    .ach-stat-card {
+        padding: 8px 6px;
+        flex-shrink: 0;
+        min-width: 120px;
+    }
+
+    .ach-stat-number {
+        font-size: 16px;
+    }
+
+    .ach-stat-label {
+        font-size: 8px;
+    }
+
+    .rankings-grid {
+        display: flex;
+        gap: 8px;
+        padding: 12px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        margin: 0 12px;
+        border-radius: 8px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .rankings-grid::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .rankings-grid::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .rankings-grid::-webkit-scrollbar-thumb {
+        background: var(--emerald-green);
+        border-radius: 2px;
+    }
+
+    .rank-card {
+        flex-shrink: 0;
+        min-width: 140px;
+    }
+
+    .ach-overview-grid {
+        display: flex;
+        gap: 8px;
+        padding: 12px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        margin: 0 12px;
+        border-radius: 8px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .ach-overview-grid::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .ach-overview-grid::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .ach-overview-grid::-webkit-scrollbar-thumb {
+        background: var(--emerald-green);
+        border-radius: 2px;
+    }
+
+    .ach-overview-card {
+        padding: 12px;
+        flex-shrink: 0;
+        min-width: 200px;
+    }
+
+    .ach-grid {
+        display: flex;
+        gap: 8px;
+        padding: 12px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        margin: 0 12px;
+        border-radius: 8px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .ach-grid::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .ach-grid::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .ach-grid::-webkit-scrollbar-thumb {
+        background: var(--emerald-green);
+        border-radius: 2px;
+    }
+
+    .ach-card {
+        flex-shrink: 0;
+        min-width: 200px;
+    }
+
+    .ach-card-header {
+        padding: 10px 10px 0;
+    }
+
+    .ach-card-body {
+        padding: 10px;
+    }
+
+    .ach-timeline-item {
+        padding-bottom: 20px;
+    }
+
+    .ach-section {
+        padding: 20px 12px;
+        overflow: hidden;
+    }
+
+    .ach-overview {
+        padding: 20px 12px;
+        overflow: hidden;
+    }
+
+    .rankings-section {
+        padding: 20px 12px;
+        overflow: hidden;
     }
 }
 
