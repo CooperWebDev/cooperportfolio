@@ -7,6 +7,7 @@
 
     const NAV_ITEMS = [
         { href: 'index.html', label: 'Home' },
+        { href: 'bot.html', label: 'Bot' },
         { href: 'achievements.html', label: 'Achievements' },
         { href: 'projects.html', label: 'Projects' },
         { href: 'skills.html', label: 'Skills' },

@@ -139,7 +139,7 @@
                 labels: ['1v1', '2v2', '3v3', '4v4', 'Hoops', 'Rumble', 'Dropshot', 'Snow Day', 'Tournaments', 'Casual'],
                 datasets: [{
                     label: 'Peak NL Rank',
-                    data: [742, 586, 786, 549, 376, 527, 443, 104, 542, 325],
+                    data: [742, 586, 705, 549, 376, 527, 443, 104, 542, 325],
                     backgroundColor: CHART_COLORS.accent,
                     borderRadius: 4
                 }]
